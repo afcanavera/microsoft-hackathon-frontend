@@ -1,18 +1,8 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
 $fontsize: 14px;
-$tablet-breakpoint: 768px;
-$desktop-breakpoint: 1280px;
-
-@mixin tablet {
-  @media screen and (min-width: $tablet-breakpoint) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media screen and (min-width: $desktop-breakpoint) {
-    @content;
-  }
-}
 
 @mixin margin {
   height: 95dvh;
@@ -43,25 +33,6 @@ $desktop-breakpoint: 1280px;
     background: #0052aa;
     cursor: pointer;
   }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  background-color: #050329;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-p {
-  margin: 0;
 }
 
 .layout {
