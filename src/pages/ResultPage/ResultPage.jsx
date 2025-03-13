@@ -1,4 +1,4 @@
-import "./WorkExamplePage.scss";
+import "./ResultPage.scss";
 import TemplateCopyMe from '../../components/TemplateCopyMe/TemplateCopyMe'
 
 function ResultPage() {

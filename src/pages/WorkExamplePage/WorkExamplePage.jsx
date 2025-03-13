@@ -1,11 +1,11 @@
 import "./WorkExamplePage.scss";
-import TemplateCopyMe from '../../components/TemplateCopyMe/TemplateCopyMe'
+import Chatbot from "../../components/Chatbot/Chatbot";
 
 function WorkExamplePage() {
 
   return (
     <>
-      <TemplateCopyMe />
+      <Chatbot />
     </>
   )
 }
