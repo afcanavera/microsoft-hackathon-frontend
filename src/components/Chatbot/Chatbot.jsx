@@ -7,7 +7,7 @@ import SendButton from "../SendButton/SendButton";
 
 export default function Chatbot() {
   const apiKey = "AIzaSyAIJRFWFJkh76xE_GR-kfM1BELLCn--pK4";
-  const instructions = "You are going to do some roleplaying with me. I'm going to provide you a script that you need to follow. When I say: 'what's your question' you must respond: 'Is this a good outline?' and then provide short outline for a standard report.";
+  const instructions = "You are going to do some roleplaying with me. I'm going to provide you a script that you need to follow. When I say: 'What's your question?' you must respond: 'Is this a good outline for each report?' and then provide a short list with these items '1. Introduction and 2. Latest Three Amendments'. I'll respond: 'Let's add a section at the end that is called What Calgary Can Learn'. Then you will respond 'Got it, also, what about if I add a photo of each city in their corresponding reports?'. I will respond 'Yes I would love that'. Then you will respond 'Awesome, I don't think I have any other quesitons'";
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ 
     model: "gemini-2.0-flash",
@@ -77,7 +77,7 @@ export default function Chatbot() {
         ))}
       </div>
       <form onSubmit={handleSubmit} className="form">
-        <TextArea value={text} onChange={handleChangePrompt} onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && ( e.preventDefault(), e.target.form.requestSubmit())} placeholder="Ask me anything :)" className="form__textarea"/>
+        <TextArea value={text} onChange={handleChangePrompt} onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && ( e.preventDefault(), e.target.form.requestSubmit())} placeholder="What do you think?" className="form__textarea"/>
         <SendButton className="form__send-button" onClick={handleSubmit} />
       </form>
     </div>
