@@ -1,7 +1,7 @@
-import "./HomePage.scss";
+import "./WorkExamplePage.scss";
 import TemplateCopyMe from '../../components/TemplateCopyMe/TemplateCopyMe'
 
-function HomePage() {
+function ResultPage() {
 
   return (
     <>
@@ -10,4 +10,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default ResultPage

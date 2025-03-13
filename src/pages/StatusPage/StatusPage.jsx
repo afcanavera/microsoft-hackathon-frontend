@@ -1,7 +1,7 @@
-import "./HomePage.scss";
+import "./StatusPage.scss";
 import TemplateCopyMe from '../../components/TemplateCopyMe/TemplateCopyMe'
 
-function HomePage() {
+function StatusPage() {
 
   return (
     <>
@@ -10,4 +10,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default StatusPage

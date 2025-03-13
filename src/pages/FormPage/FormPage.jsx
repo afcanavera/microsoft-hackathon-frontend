@@ -1,7 +1,7 @@
-import "./HomePage.scss";
+import "./FormPage.scss";
 import TemplateCopyMe from '../../components/TemplateCopyMe/TemplateCopyMe'
 
-function HomePage() {
+function FormPage() {
 
   return (
     <>
@@ -10,4 +10,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default FormPage
