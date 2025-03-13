@@ -2,3 +2,29 @@
 $tablet__min-breakpoint: 768px;
 $tablet__max-breakpoint: 1279px;
 $desktop__min-breakpoint: 1280px;
+
+//colours
+$pink: #fff3fa;
+$white: #ffffff;
+$beige: #f6f6f6;
+$brown-button: #c2c2c2;
+$grey-text: #b3b3b3;
+
+//gradient colours main background
+$background-top: #dfe2ee;
+$background-bottom: #dcc8d0;
+
+//gradient color green textbox
+$green-box-start: #c5c8c4;
+$green-box-end: #cbceca;
+
+//gradient color brown textbox
+$brown-box-start: #e3e6ee;
+$brown-box-end: #e9e9ed;
+
+//font types
+// variables.scss
+$font-regular: "Sen Regular", sans-serif;
+$font-medium: "Sen Medium", sans-serif;
+$font-semibold: "Sen Semi Bold", sans-serif;
+$font-bold: "Sen Bold", sans-serif;
