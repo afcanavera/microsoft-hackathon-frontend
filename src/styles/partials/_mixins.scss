@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./fonts" as *;
 
 @mixin tablet {
   @media screen and (min-width: $tablet__min-breakpoint) {
@@ -11,3 +12,25 @@
     @content;
   }
 }
+
+@mixin font-style($size, $line-height, $weight, $font-family) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+  font-family: $font-family;
+}
+
+/*font sizes to follow:
+Homepage:
+title: semibold - 48px
+welcome: semibold - 50px
+button: medium - 30px
+
+Formpage:
+title: semibold - 48px
+question: bold - 20px
+text placeholders: medium - 17px
+chatbox name: bold - 24px
+chatbox email: regular - 20px
+button - bold 20px
+*/
