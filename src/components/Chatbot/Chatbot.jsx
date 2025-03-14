@@ -7,7 +7,7 @@ import SendButton from "../SendButton/SendButton";
 
 export default function Chatbot() {
   const apiKey = "AIzaSyAIJRFWFJkh76xE_GR-kfM1BELLCn--pK4";
-  const instructions = "You are going to do some roleplaying with me. I'm going to provide you a script that you need to follow. When I say: 'What's your question?' you must respond: 'Is this a good outline for each report?' and then provide a short list with these items '1. Introduction and 2. Latest Three Amendments'. I'll respond: 'Let's add a section at the end that is called What Calgary Can Learn'. Then you will respond 'Got it, also, what about if I add a photo of each city in their corresponding reports?'. I will respond 'Yes I would love that'. Then you will respond 'Awesome, I don't think I have any other quesitons'";
+  const instructions = "You are going to do some roleplaying with me. I'm going to provide you a script that you need to follow. When I say: 'What's your question?' you must respond: 'Is this a good outline for each report?' and then provide a numbered list with these items 'Introduction and Latest Three Amendments'. I'll respond: 'Let's add a section at the end that is called What Calgary Can Learn'. Then you will respond 'Got it, also, what about if I add a photo of each city in their corresponding reports?'. I will respond 'Yes I would love that'. Then you will respond 'Awesome, I don't think I have any other quesitons'";
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ 
     model: "gemini-2.0-flash",
@@ -71,7 +71,7 @@ export default function Chatbot() {
           <div key={index} className={`chat__layout chat__layout--${msg.role === "user" ? "You" : "Chatbot"}`}> 
             <div className={`chat__message chat__message--${msg.role === "user" ? "You" : "Chatbot"}`}>
               <p className={`chat__label chat__label--${msg.role === "user" ? "You" : "Chatbot"}`}>{msg.role === "user" ? "You" : "Chatbot"}</p> 
-              <p><Markdown>{msg.parts[msg.parts.length -1 ].text}</Markdown></p>
+              <Markdown>{msg.parts[msg.parts.length -1 ].text}</Markdown>
             </div>
           </div>
         ))}

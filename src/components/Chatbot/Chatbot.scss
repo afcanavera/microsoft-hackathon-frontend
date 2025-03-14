@@ -143,38 +143,36 @@ $fontsize: 14px;
   }
 
   &__message {
-    border: 2px solid;
     padding: 20px;
     p {
       margin-bottom: 12px;
     }
     &--You {
-      background-color: #9c9bff;
+      background-color: #FFF3FA;
       color: #080128;
-      border-color: #3532ff;
-      box-shadow: 0px 0px 15px 1px #6f79ff;
       border-radius: 20px 20px 0px 20px;
     }
 
     &--Chatbot {
-      background-color: rgb(253, 174, 101);
+      background-color: #F6F6F6;
       color: black;
-      border-color: rgb(255, 102, 0);
-      box-shadow: 0px 0px 15px 1px #ffa46f;
       border-radius: 20px 20px 20px 0px;
+
+      & ol {
+        margin-left: 14px;
+      }
     }
   }
 }
 
 .form {
-  border: 2px solid rgb(32, 84, 255);;
   border-radius: 20px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   height: auto;
-  background-color: rgb(59, 69, 114);
+  background-color: #F9F7F7;
 
   &:focus {
     box-shadow: 0px 0px 20px 1px #ffa46f;
@@ -183,7 +181,7 @@ $fontsize: 14px;
   &__textarea {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     flex-grow: 1;
-    background-color: rgb(59, 69, 114);
+    background-color: #F9F7F7;
     border: none;
     width: 100%;
     min-height: 14px;
@@ -191,14 +189,14 @@ $fontsize: 14px;
     overflow-y: auto;
     font-size: $fontsize;
     resize: none; // Disable manual resizing
-    color:  #8dc2ff;
+    color:  #000000;
 
     &:focus {
       outline: none;
     }
 
     &::placeholder {
-      color: rgb(93, 127, 165);
+      color: #A89CAE;
     }
 
     &::-webkit-scrollbar {

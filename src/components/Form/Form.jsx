@@ -1,4 +1,4 @@
-export function Form(){
+export default function Form(){
   return(
     <>
     <h1>Tell me about yourself and what would you like to do?</h1>
