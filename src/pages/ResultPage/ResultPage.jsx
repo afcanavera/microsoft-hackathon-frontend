@@ -10,7 +10,7 @@ function ResultPage() {
         <div className="result-page__search-container">
           <input
             type="text"
-            className="result-page__search"
+            className="result-page__search-input"
             placeholder="Search all requests"
           />
           <img

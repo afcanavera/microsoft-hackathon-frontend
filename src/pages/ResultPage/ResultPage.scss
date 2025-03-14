@@ -27,17 +27,19 @@ body {
     gap: 2rem;
   }
 
-  &__search-container {
-    position: relative;
-    width: 30%;
-  }
-
   &__search {
-    width: 100%;
-    padding: 0.5rem;
-    padding-left: 1rem;
-    border: 0.0625rem solid #c2c2c2;
-    border-radius: 1.25rem;
+    &-container {
+      position: relative;
+      width: 30%;
+    }
+
+    &-input {
+      width: 100%;
+      padding: 0.5rem;
+      padding-left: 1rem;
+      border: 0.0625rem solid #c2c2c2;
+      border-radius: 1.25rem;
+    }
 
     &-icon {
       position: absolute;
