@@ -17,7 +17,7 @@ const Container = ({ children }) => {
           </div>
           <div className="chatbot-info">
             <img src={userIcon} alt="User Icon" className="user-icon" />
-            <span className="chatbot-name">Chatbot's Name</span>
+            <span className="chatbot-name">Chatbot</span>
           </div>
         </div>
 
