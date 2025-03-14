@@ -16,17 +16,19 @@
   background-color: $white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:center;
+  gap:10px;
 }
 &__user{
   margin-top: 150px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items:flex-start;
   width: 30%;
   background-color: $background-top;
   background-color: white;
+  gap:5px;
 &-name{
   font-family: $font-medium;
   font-size: 16px;
@@ -43,10 +45,31 @@
   font-family: $font-medium;
   font-size: 18px;
 }
-&__
+&__form{
+  margin-top: 100px;
+  width:60%;
+}
+&__field{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+&__label{
+  font-family: $font-medium;
+  font-size: 12px;
+}
+&__textarea{
+  height: 12vh;
+  border-radius: 20px;
+  background-color: $beige;
+  border:none;
+}
+&__pencil{
+  width:15px;
+}
+}
 
-}
-}
+
 
 
 

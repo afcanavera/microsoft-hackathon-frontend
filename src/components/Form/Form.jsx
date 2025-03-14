@@ -6,10 +6,10 @@ export default function Form() {
     <div className="Form__background">
       <main className="Form__main">
         <div className="Form__user">
-          <img src={avatar} alt="" className = "Form__user-avatar"/>
+          <img src={avatar} alt="" className="Form__user-avatar" />
           <div className="Form__user-info">
-          <h2 className="Form__user-name">Chatbot's name</h2>
-          <h2 className="Form__user-email">Chatbot@gmail.com</h2>
+            <h2 className="Form__user-name">Chatbot's name</h2>
+            <h2 className="Form__user-email">Chatbot@gmail.com</h2>
           </div>
         </div>
         <div className="Form__form">
@@ -17,84 +17,88 @@ export default function Form() {
             Tell me about yourself and what would you like to do?
           </h1>
           <form className="Form__field">
-            <div className="Form__container-outer">
-              <div className="Form__container-inner">
-                <label className="Form__label" htmlFor="">
-                  What is your name?
-                </label>
-                <img src={pencile} alt="" />
+            <div className="Form__container1">
+              <div className="Form__container-outer">
+                <div className="Form__container-inner">
+                  <label className="Form__label" htmlFor="">
+                    What is your name?
+                  </label>
+                  <img src={pencile} alt="" className="Form__pencil" />
+                </div>
+                <textarea
+                  className="Form__textarea"
+                  name="name"
+                  id="name"
+                ></textarea>
               </div>
-              <textarea
-                className="Form__textarea"
-                name="name"
-                id="name"
-              ></textarea>
-            </div>
-            <div className="Form__container-outer">
-              <div className="Form__container-inner">
-                <label className="Form__label" htmlFor="">
-                  What is your background?
-                </label>
-                <img src={pencile} alt="" />
+              <div className="Form__container-outer">
+                <div className="Form__container-inner">
+                  <label className="Form__label" htmlFor="">
+                    What is your background?
+                  </label>
+                  <img src={pencile} alt="" className="Form__pencil" />
+                </div>
+                <textarea
+                  className="Form__textarea"
+                  name="background"
+                  id="background"
+                ></textarea>
               </div>
-              <textarea
-                className="Form__textarea"
-                name="background"
-                id="background"
-              ></textarea>
-            </div>
-            <div className="Form__container-outer ">
-              <div className="Form__container-inner">
-                <label className="Form__label" htmlFor="">
-                  What type of work do you want to do?
-                </label>
-                <img src={pencile} alt="" />
+              <div className="Form__container-outer ">
+                <div className="Form__container-inner">
+                  <label className="Form__label" htmlFor="">
+                    What type of work do you want to do?
+                  </label>
+                  <img src={pencile} alt="" />
+                </div>
+                <textarea
+                  className="Form__textarea"
+                  name="name"
+                  id="name"
+                ></textarea>
               </div>
-              <textarea
-                className="Form__textarea"
-                name="name"
-                id="name"
-              ></textarea>
             </div>
+            <div className = "Form__container1">
             <div className="Form__container-outer">
               <div className="Form__container-inner">
                 <label htmlFor="" className="Form__label">
                   What format would you like?
                 </label>
-                <img src={pencile} alt="" />
+                <img src={pencile} alt="" className="Form__pencil" />
               </div>
-              <textarea name="name" id="name" className="Form_tex"></textarea>
+              <textarea name="name" id="name" className="Form__textarea"></textarea>
             </div>
             <div className="Form__container-outer">
               <div className="Form__container-inner">
                 <label htmlFor="" className="Form__label">
                   When is your deadline?
                 </label>
-                <img src={pencile} alt="" />
+                <img src={pencile} alt="" className="Form__pencil" />
               </div>
               <textarea
                 name="name"
                 id="name"
                 className="Form__textarea"
-              ></textarea>
+                ></textarea>
             </div>
             <div className="Form__container-outer">
               <div className="Form__container-inner">
                 <label htmlFor="" className="Form__label">
                   Any additional notes?
                 </label>
-                <img src={pencile} alt="" />
+                <img src={pencile} alt="" className="Form__pencil" />
               </div>
               <textarea
                 name="name"
                 id="name"
                 className="Form__textarea"
-              ></textarea>
+                ></textarea>
             </div>
+                </div>
+          </form>
             <button type="submit" className="Form__button">
               I'm ready!
             </button>
-          </form>
         </div>
       </main>
     </div>
