@@ -1,11 +1,13 @@
 import "./FormPage.scss";
-import TemplateCopyMe from '../../components/TemplateCopyMe/TemplateCopyMe'
+import TemplateCopyMe from '../../components/TemplateCopyMe/TemplateCopyMe';
+import Form from "../../components/Form/Form";
 
 function FormPage() {
 
   return (
     <>
-      <TemplateCopyMe />
+      
+      <Form />
     </>
   )
 }
