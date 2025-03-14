@@ -1,2 +1,25 @@
 @use "./variables" as *;
 @use "./mixins" as *;
+
+// textbox font size - 14px
+//autopilot title size - bold 36px
+
+@font-face {
+  font-family: "Sen Regular";
+  src: url(../../Assets/Font/Sen-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Sen Medium";
+  src: url(../../Assets/Font/Sen-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Sen Semi Bold";
+  src: url(../../Assets/Font/Sen-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Sen Bold";
+  src: url(../../Assets/Font/Sen-Bold.ttf);
+}
