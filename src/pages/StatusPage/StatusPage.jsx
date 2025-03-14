@@ -44,7 +44,7 @@ function StatusPage() {
 
           <div className="status__page--task status__page--completed">
             <CheckCircle className="status__page--icon" />
-            <p>Schedule a meeting with Felipe for 5pm</p>
+            <p>Schedule a meeting with Marisa for 5pm</p>
           </div>
 
           <div className="status__page--task status__page--completed">
