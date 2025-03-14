@@ -26,15 +26,15 @@ function ResultPage() {
 
       {/* Header Row */}
       <section className="result-page__header">
-        <div className="result-page__header-item">
+        <div className="result-page__header-item align-a">
           <h4 className="result-page__header-title">Request</h4>
           <img src={sortIcon} alt="sort icon" className="result-page__sort-icon" />
         </div>
-        <div className="result-page__header-item">
+        <div className="result-page__header-item align-b">
           <h4 className="result-page__header-title">Document Type</h4>
           <img src={sortIcon} alt="sort icon" className="result-page__sort-icon" />
         </div>
-        <div className="result-page__header-item">
+        <div className="result-page__header-item align-c">
           <h4 className="result-page__header-title">Date</h4>
           <img src={sortIcon} alt="sort icon" className="result-page__sort-icon" />
         </div>
@@ -47,7 +47,7 @@ function ResultPage() {
           <div className="result-page__check-container">
             <img src={checkIcon} alt="check icon" className="result-page__check-icon" />
             <p className="result-page__table-text">
-              Identify and resolve the issue in this code
+              Creating bylaws reports as word documents
             </p>
           </div>
           <a
@@ -56,7 +56,7 @@ function ResultPage() {
             rel="noopener noreferrer"
             className="result-page__table-text result-page__table-link"
           >
-            Word Document
+            OneDrive Folder
           </a>
           <p className="result-page__table-text">Mar. 13, 2025</p>
         </div>
@@ -70,10 +70,10 @@ function ResultPage() {
           <div className="result-page__check-container">
             <img src={checkIcon} alt="check icon" className="result-page__check-icon" />
             <p className="result-page__table-text">
-              Schedule a meeting with Felipe for 5pm
+              Schedule a meeting with Marisa for 5pm
             </p>
           </div>
-          <p className="result-page__table-text">Word Document</p>
+          <p className="result-page__table-text link"><u>Outlook Calendar</u></p>
           <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
 
@@ -84,7 +84,7 @@ function ResultPage() {
               Create a new Excel spreadsheet
             </p>
           </div>
-          <p className="result-page__table-text">Excel</p>
+          <p className="result-page__table-text link"><u>Excel Sheet</u></p>
           <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
 
@@ -93,7 +93,7 @@ function ResultPage() {
             <img src={checkIcon} alt="check icon" className="result-page__check-icon" />
             <p className="result-page__table-text">Set up Teams notification</p>
           </div>
-          <p className="result-page__table-text">PDF</p>
+          <p className="result-page__table-text link"><u>PDF</u></p>
           <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
       </section>
