@@ -1,5 +1,29 @@
-.nav{
+
+.nav {
+    width: 100%;
+    height: 60px;
     display: flex;
-    justify-content: space-between;
-    padding: 24px 30px;
+    align-items: center;
+    justify-content: space-between; // Push images to opposite ends
+    padding: 0 20px; // Adds spacing from the edges
+
+    .nav__home, .nav__menu {
+        display: flex;
+        align-items: center;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+
+        .homeimage {
+            width: 40px; // Adjust size as needed
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1); // Slight zoom effect on hover
+            }
+        }
+    }
 }

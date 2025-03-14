@@ -7,16 +7,12 @@ import "./HomePage.scss";
 function HomePage() {
 
   return (
-    <main className="main">
+    <>
       <HomeNav />
-      <div className="box__main">
       <PopBox />
-      </div>
-      <div className="btn">
       <SelectBtn />
-      </div>
       <OtherUsers />
-    </main>
+    </>
   )
 }
 
