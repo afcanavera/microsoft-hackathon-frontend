@@ -49,7 +49,7 @@ export default function Form() {
                   <label className="Form__label" htmlFor="">
                     What type of work do you want to do?
                   </label>
-                  <img src={pencile} alt="" />
+                  <img src={pencile} alt="" className="Form__pencil" />
                 </div>
                 <textarea
                   className="Form__textarea"
