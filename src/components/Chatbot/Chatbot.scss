@@ -5,12 +5,12 @@
 $fontsize: 14px;
 
 @mixin margin {
-  height: 100%;
+
   margin: 2.5dvh;
   @include tablet {
-    height: 100%;
+
     margin: 2.5dvh auto;
-    width: 100%;
+    
   }
 }
 
@@ -39,6 +39,8 @@ $fontsize: 14px;
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
+  height: 500px;
+  width: 800px;
   @include margin
 }
 
