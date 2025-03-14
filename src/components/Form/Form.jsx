@@ -1,6 +1,7 @@
 import pencile from "../../Assets/images/edit.png";
 import arrow from "../../Assets/images/Arrow-right-circle.png";
 import "./Form.scss";
+import { Link } from "react-router-dom";
 export default function Form() {
   return (
     <div className="Form__background">
@@ -19,7 +20,7 @@ export default function Form() {
                   <img src={pencile} alt="" className="Form__pencil" />
                 </div>
                 <textarea
-                  className="Form__textarea"
+                  className="Form__textarea area-style"
                   name="name"
                   id="name"
                 ></textarea>
@@ -63,10 +64,12 @@ export default function Form() {
             </div>
                 </div>
           </form>
+          <Link to="/workexample" className="Form__link">
             <button type="submit" className="Form__button">
               I'm ready! 
               <img src={arrow} alt="" className="Form__button--arrow" />
             </button>
+          </Link>
         </div>
       </main>
     </div>
