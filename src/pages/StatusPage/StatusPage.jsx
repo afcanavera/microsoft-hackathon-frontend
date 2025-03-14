@@ -27,7 +27,7 @@ function StatusPage() {
           {loadingTask ? (
             <div className="status__page--task status__page--loading">
               <Loader className="status__page--icon spinning" />
-              <p>Create bylaws reports as a word document</p>
+              <p>Create bylaws reports as word documents</p>
             </div>
           ) : (
             <Link to="/result">
@@ -37,7 +37,7 @@ function StatusPage() {
                 }`}
               >
                 <CheckCircle className="status__page--icon" />
-                <p>Create bylaws reports as a word document</p>
+                <p>Create bylaws reports as word documents</p>
               </div>
             </Link>
           )}
