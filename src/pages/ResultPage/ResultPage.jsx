@@ -1,6 +1,6 @@
 import "./ResultPage.scss";
-import searchIcon from "../../assets/icons/search-24px.svg";
-import sortIcon from "../../assets/icons/sort.svg";
+import searchIcon from "../../assets/images/Search.png";
+import sortIcon from "../../assets/images/arrow_drop_down.png";
 
 function ResultPage() {
   return (
