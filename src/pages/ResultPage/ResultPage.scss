@@ -13,6 +13,10 @@ body {
 }
 
 .result-page {
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+  top: -40px;
   &__top-container {
     display: flex;
     gap: 2rem;
@@ -124,7 +128,7 @@ body {
 
 .align {
   &-a {
-    width: 625px;
+    width: 570px;
     
   }
   &-b {
