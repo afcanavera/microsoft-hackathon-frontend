@@ -1,3 +1,123 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #c1def6, rgba(150, 49, 85, 0.52));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-page {
+  &__top-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  &__title {
+    @include font-style(1.75rem, 1.5rem, bold, $font-bold);
+  }
+
+  &__search-container {
+    position: relative;
+    width: 30%;
+  }
+
+  &__search-input {
+    @include font-style(1rem, 0.5rem, regular, $font-regular);
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 1.25rem;
+  }
+
+  &__search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+  }
+
+  &__header-item {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  &__sort-icon {
+    width: 1.25rem;
+    cursor: pointer;
+  }
+
+  &__table {
+    padding: 1rem 0;
+
+    &--border {
+      border-bottom: 1px solid #c2c2c2;
+    }
+
+    &-title {
+      color: #a89cae;
+      padding-bottom: 0.5rem;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      border-radius: 0.5rem;
+      background-color: #f6f6f6;
+      margin-bottom: 1rem;
+
+      &--green {
+        background-color: #bcdfc3;
+      }
+
+      > * {
+        flex: 1;
+        min-width: 150px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__check-container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 2;
+    text-align: left;
+  }
+
+  &__table-link {
+    color: #007bff;
+    text-decoration: underline;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+
+  &__dots-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__dots-icon {
+    cursor: pointer;
+  }
+}
