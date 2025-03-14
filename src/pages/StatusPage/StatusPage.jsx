@@ -1,15 +1,22 @@
 import "./StatusPage.scss";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { CheckCircle, Loader } from "lucide-react";
 import logo from "../../Assets/images/logo.png";
 
 function StatusPage() {
   const [loadingTask, setLoadingTask] = useState(true);
+  const [attentionEffect, setAttentionEffect] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setLoadingTask(false);
-    }, 3000); 
+      setAttentionEffect(true);
+
+      setTimeout(() => {
+        setAttentionEffect(false);
+      }, 3000);
+    }, 4000);
   }, []);
   return (
     <div className="status__page">
@@ -24,31 +31,40 @@ function StatusPage() {
         <div className="status__page--content">
           <p className="status__page--title">Loading your request...</p>
 
-          <div className={`task ${loadingTask ? "loading" : "completed"}`}>
-            {loadingTask ? (
-              <Loader className="icon spinning" />
-            ) : (
-              <CheckCircle className="icon" />
-            )}
-            <span>Identify and resolve the issue in this code</span>
+          {loadingTask ? (
+            <div className="status__page--task status__page--loading">
+              <Loader className="status__page--icon spinning" />
+              <p>Create bylaws reports as a word document</p>
+            </div>
+          ) : (
+            <Link to="/result">
+              <div
+                className={`status__page--task status__page--completed ${
+                  attentionEffect ? "status__page--attention" : ""
+                }`}
+              >
+                <CheckCircle className="status__page--icon" />
+                <p>Create bylaws reports as a word document</p>
+              </div>
+            </Link>
+          )}
+
+          <div className="status__page--task status__page--completed">
+            <CheckCircle className="status__page--icon" />
+            <p>Schedule a meeting with Felipe for 5pm</p>
           </div>
 
-          <div className="task completed">
-            <CheckCircle className="icon" />
-            <span>Schedule a meeting with Felipe for 5pm</span>
+          <div className="status__page--task status__page--completed">
+            <CheckCircle className="status__page--icon" />
+            <p>Set up Teams notification</p>
           </div>
 
-          <div className="task completed">
-            <CheckCircle className="icon" />
-            <span>Set up Teams notification</span>
+          <div className="status__page--task status__page--completed">
+            <CheckCircle className="status__page--icon" />
+            <p>Create a new Excel spreadsheet</p>
           </div>
 
-          <div className="task completed">
-            <CheckCircle className="icon" />
-            <span>Create a new Excel spreadsheet</span>
-          </div>
-
-          <p className="view-requests">View All Requests</p>
+          <p className="status__page--view-requests">View All Requests</p>
         </div>
       </div>
     </div>
