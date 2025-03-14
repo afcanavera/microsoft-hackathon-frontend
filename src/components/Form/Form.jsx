@@ -1,23 +1,10 @@
-import avatar from "../../Assets/images/user4.png";
 import pencile from "../../Assets/images/edit.png";
-import logo from "../../Assets/images/logo.png";
 import arrow from "../../Assets/images/Arrow-right-circle.png";
 import "./Form.scss";
 export default function Form() {
   return (
     <div className="Form__background">
-        <div className="Form__logo">
-          <img src={logo} alt="" className="Form__logo--image"/>
-          <h1 className="Form__logo--text">Autopilot</h1>
-        </div>
       <main className="Form__main">
-        <div className="Form__user">
-          <img src={avatar} alt="" className="Form__user-avatar" />
-          <div className="Form__user-info">
-            <h2 className="Form__user-name">Chatbot's name</h2>
-            <h2 className="Form__user-email">Chatbot@gmail.com</h2>
-          </div>
-        </div>
         <div className="Form__form">
           <h1 className="Form__title">
             Tell me about yourself and what would you like to do?

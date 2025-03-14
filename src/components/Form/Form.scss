@@ -3,14 +3,6 @@
 @use "../../styles/partials/mixins" as *;
 
 .Form{
-  &__background{
-  background: linear-gradient(to bottom, #c1def6, rgba(150, 49, 85, 0.52));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:100vh;
-  position: relative;
-}
 &__logo{
   position: absolute;
   top: 12%;
@@ -24,8 +16,6 @@
   }
 }
 &__main{
-  width: 85%;
-  height: 80vh;
   background-color: $white;
   display: flex;
   flex-direction: row;
@@ -58,10 +48,6 @@
   font-family: $font-bold;
   font-size: 24px;
 }
-&__form{
-  margin-top: 100px;
-  width:60%;
-}
 &__field{
   display: flex;
   flex-direction: row;
@@ -91,7 +77,7 @@
   width: 30%;
   height: 5vh;
   color: $white;
-  margin-left:25%;
+  margin-left:40%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -106,7 +92,8 @@
 }
 }
 
-
-
+.content{
+  margin-top: 50px;
+}
 
 
