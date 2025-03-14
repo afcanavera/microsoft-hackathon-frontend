@@ -28,6 +28,10 @@ body {
     padding: 2rem 0;
   }
 
+  &__title {
+    @include font-style(1.75rem, 1.5rem, bold, $font-bold);
+  }
+
   &__search {
     &-container {
       position: relative;
@@ -35,6 +39,7 @@ body {
     }
 
     &-input {
+      @include font-style(1rem, 0.5rem, regular, $font-regular);
       width: 100%;
       padding: 0.5rem;
       padding-left: 1rem;
@@ -51,6 +56,8 @@ body {
   }
 
   &__header {
+    @include font-style(1.125rem, 1.5rem, bold, $font-bold);
+    color: #b3b3b3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +75,8 @@ body {
     }
 
     &-title {
+      @include font-style(1.25rem, 1.5rem, medium, $font-medium);
+      color: #a89cae;
       margin-bottom: 0.5rem;
     }
 
@@ -82,6 +91,10 @@ body {
       &--green {
         background-color: #bcdfc3;
       }
+    }
+
+    &-text {
+      @include font-style(1.125rem, 1.5rem, regular, $font-regular);
     }
   }
 
