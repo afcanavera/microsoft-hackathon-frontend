@@ -6,7 +6,8 @@ import dotsIcon from "../../assets/images/dotdot.png";
 
 function ResultPage() {
   return (
-    <main className="result-page__content-container">
+    <main className="result-page">
+      {/* Top Container with Title and Search */}
       <div className="result-page__top-container">
         <h1 className="result-page__title">Completed Requests</h1>
         <div className="result-page__search-container">
@@ -23,60 +24,51 @@ function ResultPage() {
         </div>
       </div>
 
+      {/* Header Row */}
       <section className="result-page__header">
         <div className="result-page__header-item">
           <h4 className="result-page__header-title">Request</h4>
-          <img
-            src={sortIcon}
-            alt="sort icon"
-            className="result-page__sort-icon"
-          />
+          <img src={sortIcon} alt="sort icon" className="result-page__sort-icon" />
         </div>
         <div className="result-page__header-item">
           <h4 className="result-page__header-title">Document Type</h4>
-          <img
-            src={sortIcon}
-            alt="sort icon"
-            className="result-page__sort-icon"
-          />
+          <img src={sortIcon} alt="sort icon" className="result-page__sort-icon" />
         </div>
         <div className="result-page__header-item">
           <h4 className="result-page__header-title">Date</h4>
-          <img
-            src={sortIcon}
-            alt="sort icon"
-            className="result-page__sort-icon"
-          />
+          <img src={sortIcon} alt="sort icon" className="result-page__sort-icon" />
         </div>
       </section>
 
+      {/* Today's Requests */}
       <section className="result-page__table result-page__table--border">
         <h2 className="result-page__table-title">Today</h2>
         <div className="result-page__table-item result-page__table-item--green">
           <div className="result-page__check-container">
-            <img
-              src={checkIcon}
-              alt="check icon"
-              className="result-page__check-icon"
-            />
+            <img src={checkIcon} alt="check icon" className="result-page__check-icon" />
             <p className="result-page__table-text">
               Identify and resolve the issue in this code
             </p>
           </div>
-          <p className="result-page__table-text">Word Document</p>
+          <a
+            href="https://1drv.ms/f/c/ec0f4a3542a8dc24/EgyV6ErmyqVAseBURSHF4IcBnUrY990UdMxgveFTSAPKPQ?e=1eqLUQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="result-page__table-text result-page__table-link"
+          >
+            Word Document
+          </a>
           <p className="result-page__table-text">Mar. 13, 2025</p>
         </div>
       </section>
 
+      {/* Yesterday's Requests */}
       <section className="result-page__table">
         <h2 className="result-page__table-title">Yesterday</h2>
+
         <div className="result-page__table-item">
           <div className="result-page__check-container">
-            <img
-              src={checkIcon}
-              alt="check icon"
-              className="result-page__check-icon"
-            />
+            <img src={checkIcon} alt="check icon" className="result-page__check-icon" />
             <p className="result-page__table-text">
               Schedule a meeting with Felipe for 5pm
             </p>
@@ -87,11 +79,7 @@ function ResultPage() {
 
         <div className="result-page__table-item">
           <div className="result-page__check-container">
-            <img
-              src={checkIcon}
-              alt="check icon"
-              className="result-page__check-icon"
-            />
+            <img src={checkIcon} alt="check icon" className="result-page__check-icon" />
             <p className="result-page__table-text">
               Create a new Excel spreadsheet
             </p>
@@ -102,11 +90,7 @@ function ResultPage() {
 
         <div className="result-page__table-item">
           <div className="result-page__check-container">
-            <img
-              src={checkIcon}
-              alt="check icon"
-              className="result-page__check-icon"
-            />
+            <img src={checkIcon} alt="check icon" className="result-page__check-icon" />
             <p className="result-page__table-text">Set up Teams notification</p>
           </div>
           <p className="result-page__table-text">PDF</p>
@@ -114,19 +98,12 @@ function ResultPage() {
         </div>
       </section>
 
+      {/* Dots Icon for More Actions */}
       <div className="result-page__dots-container">
-        <img
-          src={dotsIcon}
-          alt="dots icon"
-          className="result-page__dots-icon"
-        />
+        <img src={dotsIcon} alt="dots icon" className="result-page__dots-icon" />
       </div>
     </main>
   );
 }
 
 export default ResultPage;
-
-// From Felipe:
-// Could you add the following link when clicking on the result in the result page?
-// https://1drv.ms/f/c/ec0f4a3542a8dc24/EgyV6ErmyqVAseBURSHF4IcBnUrY990UdMxgveFTSAPKPQ?e=1eqLUQ
