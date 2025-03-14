@@ -7,7 +7,7 @@ import SendButton from "../SendButton/SendButton";
 import { Link } from "react-router-dom";
 
 export default function Chatbot() {
-  const apiKey = "AIzaSyAIJRFWFJkh76xE_GR-kfM1BELLCn--pK4";
+  const apiKey = "YOUR APIKEY HERE";
   const instructions = "You are going to do some roleplaying with me. I'm going to provide you a script that you need to follow. When I say: 'What's your question?' you must respond: 'Is this a good outline for each report?' and then provide a numbered list with these items 'Introduction and Latest Three Amendments'. I'll respond: 'Let's add a section about what Calgary can learn from each city '. Then you will respond 'Got it, also, what about if I add a photo of each city in their corresponding reports?'. I will respond 'Yes I would love that'. Then you will respond 'Awesome, I don't think I have any other questions'";
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({ 
