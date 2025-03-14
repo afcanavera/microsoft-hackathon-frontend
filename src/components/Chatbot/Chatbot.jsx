@@ -79,11 +79,13 @@ export default function Chatbot() {
             </div>
           </div>
         ))}
+        
+        <Link className={`chat__layout--next--next--link ${count === 3 && "chat__layout--next--next--link--display"}`} to="/status"><div className="chat__layout chat__layout--You chat__layout--next">
+          <div className="chat__layout--next--next" >Let's move forward ▶</div>
+        </div></Link>
       </div>
 
-      <Link className={`chat__layout--next--next--link ${count === 3 && "chat__layout--next--next--link--display"}`} to="/status"><div className="chat__layout chat__layout--You chat__layout--next">
-        <div className="chat__layout--next--next" >Let's move forward ▶</div>
-      </div></Link>
+     
       <form onSubmit={handleSubmit} className="form">
         <TextArea value={text} onChange={handleChangePrompt} onKeyDown={(e) => e.key === "Enter" && !e.shiftKey && ( e.preventDefault(), e.target.form.requestSubmit())} placeholder="What do you think?" className="form__textarea"/>
         <SendButton className="form__send-button" onClick={handleSubmit} />
