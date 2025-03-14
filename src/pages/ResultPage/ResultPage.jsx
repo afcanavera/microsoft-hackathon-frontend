@@ -1,6 +1,6 @@
 import "./ResultPage.scss";
 import searchIcon from "../../assets/images/Search.png";
-import sortIcon from "../../assets/images/arrow_drop_down.png";
+import sortIcon from "../../assets/images/sort.png";
 import checkIcon from "../../assets/images/Check_square.png";
 import dotsIcon from "../../assets/images/dotdot.png";
 

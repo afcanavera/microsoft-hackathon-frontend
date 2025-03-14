@@ -67,6 +67,11 @@ body {
     }
   }
 
+  &__sort-icon {
+    width: 1.25rem;
+    cursor: pointer;
+  }
+
   &__table {
     padding: 1rem 0;
 
