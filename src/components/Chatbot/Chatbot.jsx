@@ -67,7 +67,7 @@ export default function Chatbot() {
         <div className="chat__layout chat__layout--Chatbot" >
           <div className="chat__message chat__message--Chatbot">
               <p className={`chat__label chat__label--Chatbot`}>Chatbot</p> 
-              <Markdown>I have a question</Markdown>
+              <Markdown>Hey Felipe! I have a question</Markdown>
           </div>
         </div>
           
