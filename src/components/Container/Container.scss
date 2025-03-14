@@ -1,0 +1,26 @@
+.container {
+    width: 1190px;
+    height: 790px;
+    background-color: white;
+    position: relative;
+  }
+  
+  .logo-box {
+    width: 248px;
+    height: 43px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  }
+  
+  .logo {
+    height: 100%; 
+  }
+  
+  .logo-text {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
