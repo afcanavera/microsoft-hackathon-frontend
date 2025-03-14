@@ -62,12 +62,17 @@ body {
   &__table {
     padding: 1rem 0;
 
+    &-title {
+      margin-bottom: 0.5rem;
+    }
+
     &-item {
       display: flex;
       justify-content: space-between;
-      padding: 1rem 1.5rem;
+      padding: 1.25rem 1.5rem;
       border-radius: 0.5rem;
       background-color: #f6f6f6;
+      margin-bottom: 1rem;
 
       &--green {
         background-color: #bcdfc3;

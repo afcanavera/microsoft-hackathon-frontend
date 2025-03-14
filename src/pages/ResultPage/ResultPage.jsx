@@ -16,7 +16,7 @@ function ResultPage() {
           <img
             src={searchIcon}
             alt="search icon"
-            className="search-bar__search-icon"
+            className="result-page__search-icon"
           />
         </div>
       </div>
@@ -49,38 +49,38 @@ function ResultPage() {
       </section>
 
       <section className="result-page__table">
-        <h2 className="result-page__title">Today</h2>
+        <h2 className="result-page__table-title">Today</h2>
         <div className="result-page__table-item result-page__table-item--green">
           <p className="result-page__table-text">
             Identify and resolve the issue in this code
           </p>
-          <p className="result-page__header-text">Word Document</p>
-          <p className="result-page__header-text">Mar. 13, 2025</p>
+          <p className="result-page__table-text">Word Document</p>
+          <p className="result-page__table-text">Mar. 13, 2025</p>
         </div>
       </section>
 
       <section className="result-page__table">
-        <h2 className="result-page__title">Yesterday</h2>
+        <h2 className="result-page__table-title">Yesterday</h2>
         <div className="result-page__table-item">
           <p className="result-page__table-text">
             Schedule a meeting with Felipe for 5pm
           </p>
-          <p className="result-page__header-text">Word Document</p>
-          <p className="result-page__header-text">Mar. 12, 2025</p>
+          <p className="result-page__table-text">Word Document</p>
+          <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
 
         <div className="result-page__table-item">
           <p className="result-page__table-text">
             Create a new Excel spreadsheet
           </p>
-          <p className="result-page__header-text">Excel</p>
-          <p className="result-page__header-text">Mar. 12, 2025</p>
+          <p className="result-page__table-text">Excel</p>
+          <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
 
         <div className="result-page__table-item">
           <p className="result-page__table-text">Set up Teams notification</p>
-          <p className="result-page__header-text">PDF</p>
-          <p className="result-page__header-text">Mar. 12, 2025</p>
+          <p className="result-page__table-text">PDF</p>
+          <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
       </section>
     </main>
@@ -88,3 +88,7 @@ function ResultPage() {
 }
 
 export default ResultPage;
+
+// From Felipe:
+// Could you add the following link when clicking on the result in the result page?
+// https://1drv.ms/f/c/ec0f4a3542a8dc24/EgyV6ErmyqVAseBURSHF4IcBnUrY990UdMxgveFTSAPKPQ?e=1eqLUQ
