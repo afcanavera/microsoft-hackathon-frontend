@@ -82,7 +82,7 @@ body {
     &-title {
       @include font-style(1.25rem, 1.5rem, medium, $font-medium);
       color: #a89cae;
-      margin-bottom: 0.5rem;
+      padding-bottom: 0.5rem;
     }
 
     &-item {
@@ -107,6 +107,8 @@ body {
     &-container {
       display: flex;
       gap: 0.625rem;
+      border-right: 0.0625rem solid black;
+      padding-right: 3rem;
     }
 
     &-icon {
