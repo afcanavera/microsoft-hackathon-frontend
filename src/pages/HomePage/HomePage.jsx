@@ -10,8 +10,10 @@ function HomePage() {
     <>
       <HomeNav />
       <PopBox />
-      <SelectBtn />
-      <OtherUsers />
+      <div className="layout-button">
+        <SelectBtn />
+        <OtherUsers />
+      </div>
     </>
   )
 }
