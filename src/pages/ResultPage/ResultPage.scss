@@ -108,12 +108,20 @@ body {
       display: flex;
       gap: 0.625rem;
     }
+
+    &-icon {
+      cursor: pointer;
+    }
   }
 
   &__dots {
     &-container {
       display: flex;
       justify-content: center;
+    }
+
+    &-icon {
+      cursor: pointer;
     }
   }
 }
