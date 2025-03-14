@@ -6,9 +6,22 @@
   &__background{
   background-color: $background-bottom;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height:100vh;
+  position: relative;
+}
+&__logo{
+  position: absolute;
+  top: 12%;
+  left:8%;
+  display: flex;
+  width: 10%;
+  &--text{
+    font-family: $font-bold;
+    font-size: 30px;
+    font-weight: 600;
+  }
 }
 &__main{
   width: 85%;
@@ -43,7 +56,7 @@
 }
 &__title{
   font-family: $font-medium;
-  font-size: 18px;
+  font-size: 16px;
 }
 &__form{
   margin-top: 100px;

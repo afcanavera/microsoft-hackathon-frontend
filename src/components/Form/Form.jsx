@@ -1,9 +1,14 @@
 import avatar from "../../Assets/images/user4.png";
 import pencile from "../../Assets/images/edit.png";
+import logo from "../../Assets/images/logo.png";
 import "./Form.scss";
 export default function Form() {
   return (
     <div className="Form__background">
+        <div className="Form__logo">
+          <img src={logo} alt="" className="Form__logo--image"/>
+          <h1 className="Form__logo--text">Autopilot</h1>
+        </div>
       <main className="Form__main">
         <div className="Form__user">
           <img src={avatar} alt="" className="Form__user-avatar" />
