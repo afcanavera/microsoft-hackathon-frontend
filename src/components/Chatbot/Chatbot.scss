@@ -5,10 +5,10 @@
 $fontsize: 14px;
 
 @mixin margin {
-  height: 95dvh;
+  height: 100%;
   margin: 2.5dvh;
   @include tablet {
-    height: 95dvh;
+    height: 100%;
     margin: 2.5dvh auto;
     width: 768px;
   }
