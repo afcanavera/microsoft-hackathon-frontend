@@ -1,6 +1,7 @@
 import avatar from "../../Assets/images/user4.png";
 import pencile from "../../Assets/images/edit.png";
 import logo from "../../Assets/images/logo.png";
+import arrow from "../../Assets/images/Arrow-right-circle.png";
 import "./Form.scss";
 export default function Form() {
   return (
@@ -102,7 +103,8 @@ export default function Form() {
                 </div>
           </form>
             <button type="submit" className="Form__button">
-              I'm ready!
+              I'm ready! 
+              <img src={arrow} alt="" className="Form__button--arrow" />
             </button>
         </div>
       </main>
