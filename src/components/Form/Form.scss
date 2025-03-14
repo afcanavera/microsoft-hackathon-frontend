@@ -1,0 +1,99 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.Form{
+&__logo{
+  position: absolute;
+  top: 12%;
+  left:8%;
+  display: flex;
+  width: 10%;
+  &--text{
+    font-family: $font-bold;
+    font-size: 36px;
+    font-weight: 600;
+  }
+}
+&__main{
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  gap:30px;
+}
+&__user{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-start;
+  width: 30%;
+  background-color: $background-top;
+  background-color: white;
+  gap:5px;
+&-name{
+  font-family: $font-bold;;
+  font-size: 16px;
+}
+&-email{
+  font-family: $font-medium;
+  font-size:16px;
+}
+&-avatar{
+  width:30px;
+}
+}
+&__title{
+  font-family: $font-bold;
+  font-size: 24px;
+}
+&__field{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin-top:10px;
+}
+&__label{
+  font-family: $font-medium;
+  font-size: 18px;
+}
+&__textarea{
+  height: 13vh;
+  border-radius: 20px;
+  background-color: $beige;
+  border:none;
+  width: 100%;;
+  margin-bottom:10px;
+}
+&__pencil{
+  width:15px;
+}
+&__button{
+  background-color: $brown-button;
+  border-radius: 20px;
+  border:none;
+  width: 30%;
+  height: 5vh;
+  color: $white;
+  margin-left:40%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+&__button--arrow{
+  margin-top: 5px;
+  position: relative;
+  top: -4px;
+  left: 20px;
+}
+}
+
+.content{
+  margin-top: 50px;
+}
+
+
