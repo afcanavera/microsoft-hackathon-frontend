@@ -21,13 +21,6 @@ function StatusPage() {
   return (
     <div className="status__page">
       <div className="status__page--container">
-        <div className="status__page--header">
-          <div className="status__page--logo">
-            <img className="status__page--icon" src={logo} alt="logo" />
-            AutoPilot+
-          </div>
-          <button className="status__page--profile">ChatBot's Name</button>
-        </div>
         <div className="status__page--content">
           <p className="status__page--title">Loading your request...</p>
 
