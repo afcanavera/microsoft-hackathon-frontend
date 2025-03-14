@@ -25,6 +25,7 @@ body {
   &__top-container {
     display: flex;
     gap: 2rem;
+    padding: 2rem 0;
   }
 
   &__search {
@@ -62,6 +63,10 @@ body {
   &__table {
     padding: 1rem 0;
 
+    &--border {
+      border-bottom: 0.0625rem solid #c2c2c2;
+    }
+
     &-title {
       margin-bottom: 0.5rem;
     }
@@ -77,6 +82,20 @@ body {
       &--green {
         background-color: #bcdfc3;
       }
+    }
+  }
+
+  &__check {
+    &-container {
+      display: flex;
+      gap: 0.625rem;
+    }
+  }
+
+  &__dots {
+    &-container {
+      display: flex;
+      justify-content: center;
     }
   }
 }

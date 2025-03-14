@@ -1,6 +1,8 @@
 import "./ResultPage.scss";
 import searchIcon from "../../assets/images/Search.png";
 import sortIcon from "../../assets/images/arrow_drop_down.png";
+import checkIcon from "../../assets/images/Check_square.png";
+import dotsIcon from "../../assets/images/dotdot.png";
 
 function ResultPage() {
   return (
@@ -48,12 +50,19 @@ function ResultPage() {
         </div>
       </section>
 
-      <section className="result-page__table">
+      <section className="result-page__table result-page__table--border">
         <h2 className="result-page__table-title">Today</h2>
         <div className="result-page__table-item result-page__table-item--green">
-          <p className="result-page__table-text">
-            Identify and resolve the issue in this code
-          </p>
+          <div className="result-page__check-container">
+            <img
+              src={checkIcon}
+              alt="check icon"
+              className="result-page__check-icon"
+            />
+            <p className="result-page__table-text">
+              Identify and resolve the issue in this code
+            </p>
+          </div>
           <p className="result-page__table-text">Word Document</p>
           <p className="result-page__table-text">Mar. 13, 2025</p>
         </div>
@@ -62,27 +71,56 @@ function ResultPage() {
       <section className="result-page__table">
         <h2 className="result-page__table-title">Yesterday</h2>
         <div className="result-page__table-item">
-          <p className="result-page__table-text">
-            Schedule a meeting with Felipe for 5pm
-          </p>
+          <div className="result-page__check-container">
+            <img
+              src={checkIcon}
+              alt="check icon"
+              className="result-page__check-icon"
+            />
+            <p className="result-page__table-text">
+              Schedule a meeting with Felipe for 5pm
+            </p>
+          </div>
           <p className="result-page__table-text">Word Document</p>
           <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
 
         <div className="result-page__table-item">
-          <p className="result-page__table-text">
-            Create a new Excel spreadsheet
-          </p>
+          <div className="result-page__check-container">
+            <img
+              src={checkIcon}
+              alt="check icon"
+              className="result-page__check-icon"
+            />
+            <p className="result-page__table-text">
+              Create a new Excel spreadsheet
+            </p>
+          </div>
           <p className="result-page__table-text">Excel</p>
           <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
 
         <div className="result-page__table-item">
-          <p className="result-page__table-text">Set up Teams notification</p>
+          <div className="result-page__check-container">
+            <img
+              src={checkIcon}
+              alt="check icon"
+              className="result-page__check-icon"
+            />
+            <p className="result-page__table-text">Set up Teams notification</p>
+          </div>
           <p className="result-page__table-text">PDF</p>
           <p className="result-page__table-text">Mar. 12, 2025</p>
         </div>
       </section>
+
+      <div className="result-page__dots-container">
+        <img
+          src={dotsIcon}
+          alt="dots icon"
+          className="result-page__dots-icon"
+        />
+      </div>
     </main>
   );
 }
