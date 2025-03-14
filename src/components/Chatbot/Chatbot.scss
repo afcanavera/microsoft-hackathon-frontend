@@ -130,6 +130,41 @@ $fontsize: 14px;
     &--You {
       justify-content: flex-end;
     }
+    &--next {
+      justify-content: flex-end;
+      
+
+      &--next {
+        background-color: #c0f0c0;
+        width: 100px;
+        font-size: $fontsize;
+        padding: 16px;
+        border-radius: 16px;
+        font-weight: bold;
+        box-shadow: 0px 8px 15px 3px #8baa8b;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #a3d679;
+        }
+
+        &:hover:active {
+          background-color: #9fc47e;
+        }
+
+        &--link {
+          text-decoration: none;
+          display: none;
+          &:visited {
+            color: black
+          }
+
+          &--display {
+            display: block;
+          }
+        }
+      }
+    }
   }
 
   &__label {
