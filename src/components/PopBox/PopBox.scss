@@ -1,36 +1,40 @@
-.box{
-    width: 100%;
+.box {
+    width: 50%; 
     height: 250px;
-}
-
-.box__container{
+    background-color: rgba(255, 255, 255, 0.58);
+    border-radius: 12px; 
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    margin: auto; 
+    top: 20vh; 
 }
-.logo__name{
+
+.logo__name {
+    position: absolute;
+    top: 10px;
+    left: 20px;
     display: flex;
     align-items: center;
-    padding: 10px;
     text-decoration: none;
     color: black;
-
-    
 }
 
-.img{
-    height: 25px;
+.img {
+    height: 30px;
+    margin-right: 8px;
 }
+
 .box__user {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Sen", sans-serif;
     font-size: 30px;
     width: 100%;
-  }
-  
+    text-align: center;
+    color: white;
+}
