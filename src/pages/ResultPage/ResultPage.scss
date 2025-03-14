@@ -1,3 +1,75 @@
 @use "../../styles/partials/fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/variables" as *;
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #c1def6, rgba(150, 49, 85, 0.52));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-page {
+  &__content-container {
+    padding: 2rem;
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    box-shadow: 0 0.25rem 0.25rem rgba(162, 84, 84, 0.2);
+    border-radius: 1.25rem;
+  }
+
+  &__top-container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__search-container {
+    position: relative;
+    width: 30%;
+  }
+
+  &__search {
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border: 0.0625rem solid #c2c2c2;
+    border-radius: 1.25rem;
+
+    &-icon {
+      position: absolute;
+      right: 1rem;
+      top: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item {
+      display: flex;
+    }
+  }
+
+  &__table {
+    padding: 1rem 0;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      border-radius: 0.5rem;
+      background-color: #f6f6f6;
+
+      &--green {
+        background-color: #bcdfc3;
+      }
+    }
+  }
+}
