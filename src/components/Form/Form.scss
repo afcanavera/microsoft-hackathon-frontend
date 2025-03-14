@@ -1,0 +1,53 @@
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.Form{
+  &__background{
+  background-color: $background-bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+&__main{
+  width: 85%;
+  height: 80vh;
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+&__user{
+  margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+  width: 30%;
+  background-color: $background-top;
+  background-color: white;
+&-name{
+  font-family: $font-medium;
+  font-size: 16px;
+}
+&-email{
+  font-family: $font-medium;
+  font-size:16px;
+}
+&-avatar{
+  width:30px;
+}
+}
+&__title{
+  font-family: $font-medium;
+  font-size: 18px;
+}
+&__
+
+}
+}
+
+
+
+

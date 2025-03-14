@@ -6,7 +6,6 @@ function FormPage() {
 
   return (
     <>
-      
       <Form />
     </>
   )
