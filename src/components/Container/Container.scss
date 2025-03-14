@@ -1,8 +1,22 @@
-.container {
+.container-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: #ffffff; 
+    padding-top: 40px; 
+    box-sizing: border-box;
+  }
+  
+  .container {
     width: 1190px;
     height: 790px;
     background-color: white;
-    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
   }
   
   .logo-box {
@@ -11,16 +25,22 @@
     padding: 12px;
     display: flex;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
   }
   
   .logo {
-    height: 100%; 
+    height: 100%;
   }
   
   .logo-text {
     color: black;
     font-size: 18px;
     font-weight: bold;
+  }
+  
+  .content {
+    flex-grow: 1;
+    overflow: auto;
+    margin-top: 20px;
   }
   

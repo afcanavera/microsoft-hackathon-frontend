@@ -7,34 +7,41 @@ import WorkExamplePage from './pages/WorkExamplePage/WorkExamplePage';
 import StatusPage from './pages/StatusPage/StatusPage';
 import ResultPage from './pages/ResultPage/ResultPage';
 
-function Layout({ children }) {
-  const location = useLocation();
-
-  // Show Container on all pages except HomePage
-  const excludeContainerRoutes = ["/home"];
-
-  return (
-    <div>
-      {!excludeContainerRoutes.includes(location.pathname) && <Container />}
-      {children}
-    </div>
-  );
-}
-
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" replace />} />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/form" element={<FormPage />} />
-          <Route path="/workexample" element={<WorkExamplePage />} />
-          <Route path="/status" element={<StatusPage />} />
-          <Route path="/result" element={<ResultPage />} />
-        </Routes>
-      </Layout>
+      <AppRoutes />
     </BrowserRouter>
+  );
+}
+
+function AppRoutes() {
+  const location = useLocation();
+  
+  // Pages where we want to use the Container
+  const useContainer = location.pathname !== "/home";
+
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to="/home" replace />} />
+      <Route path="/home" element={<HomePage />} />
+      <Route
+        path="/form"
+        element={useContainer ? <Container><FormPage /></Container> : <FormPage />}
+      />
+      <Route
+        path="/workexample"
+        element={useContainer ? <Container><WorkExamplePage /></Container> : <WorkExamplePage />}
+      />
+      <Route
+        path="/status"
+        element={useContainer ? <Container><StatusPage /></Container> : <StatusPage />}
+      />
+      <Route
+        path="/result"
+        element={useContainer ? <Container><ResultPage /></Container> : <ResultPage />}
+      />
+    </Routes>
   );
 }
 
