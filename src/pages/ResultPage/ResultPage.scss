@@ -13,15 +13,6 @@ body {
 }
 
 .result-page {
-  &__content-container {
-    padding: 2rem;
-    width: 80vw;
-    height: 80vh;
-    background-color: white;
-    box-shadow: 0 0.25rem 0.25rem rgba(162, 84, 84, 0.2);
-    border-radius: 1.25rem;
-  }
-
   &__top-container {
     display: flex;
     gap: 2rem;
@@ -32,39 +23,38 @@ body {
     @include font-style(1.75rem, 1.5rem, bold, $font-bold);
   }
 
-  &__search {
-    &-container {
-      position: relative;
-      width: 30%;
-    }
+  &__search-container {
+    position: relative;
+    width: 30%;
+  }
 
-    &-input {
-      @include font-style(1rem, 0.5rem, regular, $font-regular);
-      width: 100%;
-      padding: 0.5rem;
-      padding-left: 1rem;
-      border: 0.0625rem solid #c2c2c2;
-      border-radius: 1.25rem;
-    }
+  &__search-input {
+    @include font-style(1rem, 0.5rem, regular, $font-regular);
+    width: 100%;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 1.25rem;
+  }
 
-    &-icon {
-      position: absolute;
-      right: 1rem;
-      top: 0.5rem;
-      cursor: pointer;
-    }
+  &__search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    cursor: pointer;
   }
 
   &__header {
-    @include font-style(1.125rem, 1.5rem, bold, $font-bold);
-    color: #b3b3b3;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #b3b3b3;
+  }
 
-    &-item {
-      display: flex;
-    }
+  &__header-item {
+    display: flex;
+    flex: 1;
+    justify-content: center;
   }
 
   &__sort-icon {
@@ -76,17 +66,17 @@ body {
     padding: 1rem 0;
 
     &--border {
-      border-bottom: 0.0625rem solid #c2c2c2;
+      border-bottom: 1px solid #c2c2c2;
     }
 
     &-title {
-      @include font-style(1.25rem, 1.5rem, medium, $font-medium);
       color: #a89cae;
       padding-bottom: 0.5rem;
     }
 
     &-item {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       padding: 1.25rem 1.5rem;
       border-radius: 0.5rem;
@@ -96,34 +86,38 @@ body {
       &--green {
         background-color: #bcdfc3;
       }
-    }
 
-    &-text {
-      @include font-style(1.125rem, 1.5rem, regular, $font-regular);
+      > * {
+        flex: 1;
+        min-width: 150px;
+        text-align: center;
+      }
     }
   }
 
-  &__check {
-    &-container {
-      display: flex;
-      gap: 0.625rem;
-      border-right: 0.0625rem solid black;
-      padding-right: 3rem;
-    }
+  &__check-container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 2;
+    text-align: left;
+  }
 
-    &-icon {
-      cursor: pointer;
+  &__table-link {
+    color: #007bff;
+    text-decoration: underline;
+
+    &:hover {
+      color: #0056b3;
     }
   }
 
-  &__dots {
-    &-container {
-      display: flex;
-      justify-content: center;
-    }
+  &__dots-container {
+    display: flex;
+    justify-content: center;
+  }
 
-    &-icon {
-      cursor: pointer;
-    }
+  &__dots-icon {
+    cursor: pointer;
   }
 }
